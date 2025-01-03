@@ -55,7 +55,6 @@ const HomeScreen = () => {
           />
         </View>
 
-        {/* Heading */}
         <Text style={{ fontSize: 24, fontWeight: 'bold', marginVertical: 20, textAlign: 'center' }}>Where can we take you?</Text>
 
         {/* Search Form */}
