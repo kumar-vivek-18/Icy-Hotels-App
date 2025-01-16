@@ -92,7 +92,7 @@ const HomeScreen = () => {
           </View>
 
 
-          <TouchableOpacity style={{ backgroundColor: '#007BFF', padding: 15, borderRadius: 5, alignItems: 'center' }} onPress={handleSearch}>
+          <TouchableOpacity onPress={() => { router.push('/(tabs)/booking/hotels'); console.log('go to hotels') }} style={{ backgroundColor: '#ffb000', padding: 15, borderRadius: 5, alignItems: 'center' }} >
             <Text style={{ color: '#fff', fontWeight: 'bold', fontSize: 16 }}>Search</Text>
           </TouchableOpacity>
         </View>
@@ -123,7 +123,6 @@ const HomeScreen = () => {
         visible={datesModal}
         animationType="slide"
         transparent={true}
-      // onRequestClose={setCloseModal}
       >
         <View style={{
           flex: 1,
